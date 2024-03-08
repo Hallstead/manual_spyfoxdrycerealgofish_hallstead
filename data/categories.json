@@ -1,8 +1,7 @@
 {
-    "Example Logic only category": {
-        "hidden": true
-    },
-    "Example Yaml-option category": {
-        "yaml_option": ["DLC_enabled"]
-    }
-}
+    "G1": {"hidden": true},
+    "G2": {"hidden": true},
+    "G3": {"hidden": true},
+    "G4": {"hidden": true},
+    "G5": {"hidden": true}
+  }
