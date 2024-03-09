@@ -26,16 +26,17 @@ from ..Helpers import is_option_enabled, get_option_value
 # To add an option, use the before_options_defined hook below and something like this:
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
-class TotalCharactersToWinWith(Range):
-    """Instead of having to beat the game with all characters, you can limit locations to a subset of character victory locations."""
-    display_name = "Number of characters to beat the game with before victory"
-    range_start = 10
-    range_end = 50
-    default = 50
+class NumGames(Range):
+    """How many "win game" locations to include in the pool"""
+    display_name = "Number of 'Win X Games' locations?"
+    range_start = 0
+    range_end = 5
+    default = 3
 
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
+    options["NumGames"] = NumGames
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
