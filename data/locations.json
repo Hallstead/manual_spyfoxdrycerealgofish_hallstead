@@ -17,6 +17,6 @@
     {"name": "Win 3 Games", "category": ["Games", "G3"]},
     {"name": "Win 4 Games", "category": ["Games", "G4"]},
     {"name": "Win 5 Games", "category": ["Games", "G5"]},
-    {"name": "Win the Turtle Shell Trinket", "category": ["Turtle Shell Trinket"]},
+    {"name": "Win the Turtle Shell Trinket", "category": ["Turtle Shell Trinket"], "place_item": "Go Fish!"},
     {"name": "Match All Card Values", "category": ["((~Goal~))"], "place_item": "Victory", "requires": "|Ace| and |Two| and |Three| and |Four| and |Five| and |Six| and |Seven| and |Eight| and |Nine| and |Ten| and |Jack| and |Queen| and |King|"}
   ]
